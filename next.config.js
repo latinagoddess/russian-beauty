@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  // output: "export",
   trailingSlash: true, // <--- SET THIS TO TRUE
   images: {
     unoptimized: true, // Required for static export
