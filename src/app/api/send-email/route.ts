@@ -8,12 +8,6 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const allowedOrigins = [
   'http://localhost:3000',
-  "https://angelinas-diary.com",
-  "https://www.angelinas-diary.com",
-  "https://sweet-angel.com",
-  "https://www.sweet-angel.com",
-  "https://candys-corner.com",
-  "https://www.candys-corner.com",
   "https://slavic-goddess.com",
   "https://www.slavic-goddess.com",
 ];
@@ -42,9 +36,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     const data = await resend.emails.send({
-      from: "Angelina's Diary <noreply@angelinas-diary.com>",
-      to: ["hello.angelina.diary@gmail.com"], // Using new email from env
-      subject: "New Appointment Request from Angelina's Diary!",
+      from: "Slavic Goddess <noreply@slavic-goddess.com>",
+      to: ["europeanmodel@outlook.com"],
+      subject: "New Appointment Request from Slavic Goddess!",
       text: "New Appointment Request Received!",
     });
 

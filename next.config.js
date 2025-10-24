@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true, // Required for static export
   },
   env: {
-    NEXT_PUBLIC_RESEND_API_KEY: "re_AadsE7Kq_KayfnTGAwP4ZjQKHVZFNVNtJ",
+    NEXT_PUBLIC_RESEND_API_KEY: "re_Aq9WBJK4_CEFzHnGCrjostWzMfFCViiUn",
     NEXT_PUBLIC_EMAIL: "foreignprincess888@gmail.com",
     NEXT_PUBLIC_PHONE_NUMBER: "+1 416-618-9575",
     NEXT_PUBLIC_RECAPTCHA_SITE_KEY: "6LdQLvUrAAAAAG5884zJPfGX62Ze4_MiJ_QFq1ju",
