@@ -1,0 +1,39 @@
+{
+  "name": "russian-beauty",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
+    "framer-motion": "^11.0.28",
+    "next": "14.1.4",
+    "next-recaptcha-v3": "^1.5.0",
+    "react": "^18",
+    "react-detect-click-outside": "^1.1.7",
+    "react-dom": "^18",
+    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-icons": "^5.0.1",
+    "react-player": "^2.16.0",
+    "resend": "^3.2.0",
+    "sass": "^1.85.1",
+    "use-file-picker": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-google-recaptcha": "^2.1.9",
+    "@zeit/next-css": "^1.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "typescript": "^5"
+  }
+}

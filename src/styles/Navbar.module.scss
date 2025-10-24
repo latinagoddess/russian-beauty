@@ -1,0 +1,136 @@
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  place-content: space-between;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .logoHolder {
+    cursor: pointer;
+
+    h3 {
+      font-family: "Whisper", cursive;
+      color: black;
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 600;
+      user-select: none;
+    }
+  }
+
+  .links {
+    display: none;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .hamburger {
+    z-index: 1000;
+    cursor: pointer;
+    width: 1.2rem;
+    height: 1.5rem;
+
+    .line {
+      -webkit-transform: translateZ(0);
+      transform: rotateZ(0deg) translateY(0%);
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      margin-top: 5px;
+      border-radius: 1px;
+    }
+
+    .line:nth-child(2) {
+      transition: 0.15s ease-in-out;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .nav {
+    justify-content: right;
+    width: 100%;
+    padding: 1.5rem;
+
+    .logoHolder {
+      position: absolute;
+      left: 2rem;
+      width: 25rem;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+
+      .aboutMenu {
+        cursor: pointer;
+        background-color: transparent;
+        color: #0b1723;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        p {
+          color: #0b1723;
+          opacity: 0.9;
+          font-size: 0.9rem;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        svg {
+          width: 1rem;
+          height: 0.87rem;
+          transition: all 0.35s ease-in-out;
+        }
+      }
+
+      li {
+        margin-right: 2.5rem;
+        color: #0b1723;
+        opacity: 0.9;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+
+    .cta {
+      cursor: pointer;
+      display: flex;
+      position: absolute;
+      right: 2rem;
+      border-radius: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: rgb(12, 57, 178);
+      background: linear-gradient(
+        90deg,
+        rgba(12, 57, 178, 1) 0%,
+        rgba(54, 101, 227, 1) 100%
+      );
+      color: white;
+      font-size: 0.8rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+}

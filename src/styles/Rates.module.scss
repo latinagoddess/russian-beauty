@@ -1,0 +1,67 @@
+.rates {
+  background-image: url("/images/marble.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  min-height: 100vh;
+  padding: 8rem 2rem;
+
+  h1 {
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    list-style-type: none;
+
+    li {
+      .sale {
+        color: red;
+      }
+      
+      img {
+        margin: 1rem 0;
+        width: 20rem;
+        max-width: 90vw;
+      }
+    }
+  }
+
+  span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  .rows {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .row {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+}
