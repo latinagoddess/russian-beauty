@@ -14,6 +14,8 @@ const allowedOrigins = [
   "https://www.sweet-angel.com",
   "https://candys-corner.com",
   "https://www.candys-corner.com",
+  "https://slavic-goddess.com",
+  "https://www.slavic-goddess.com",
 ];
 
 function getCorsHeaders(origin: string | null) {
