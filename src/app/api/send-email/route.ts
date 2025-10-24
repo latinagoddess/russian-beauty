@@ -63,7 +63,37 @@ export async function POST(request: NextRequest) {
 
     // Construct the HTML content using inline styles
     const htmlContent = `
-      <div></div>
+      <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; padding: 20px;">
+        <div style="max-width: 600px; margin: 20px auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px; background-color: #ffffff;">
+          <h2 style="color: #0056b3; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px;">New Booking Request Received!</h2>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Name:</strong> ${name}
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Email:</strong> <a href="mailto:${email}" style="color: #007bff; text-decoration: none;">${email}</a>
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Phone:</strong> <a href="tel:${number}" style="color: #007bff; text-decoration: none;">${number}</a>
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Age:</strong> ${age || 'N/A'}
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Call Type:</strong> ${callType || 'N/A'}
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">City:</strong> ${city || 'N/A'}
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Date:</strong> ${date}
+          </p>
+          <p style="margin: 8px 0;">
+            <strong style="display: inline-block; min-width: 100px; color: #555;">Rate:</strong> ${rate || 'N/A'}
+          </p>
+          <br>
+          <p style="font-size: 0.9em; color: #777;">This is an automated notification from your booking form.</p>
+        </div>
+      </div>
     `;
 
     // Send the email using Resend
