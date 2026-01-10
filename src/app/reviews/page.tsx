@@ -83,15 +83,8 @@ function Reviews() {
           <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/480dca8d-d8ea-4af2-9008-b26760ahsgj1`}>Review 1</a>
           <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c43554`}>Review 2</a>
           <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c43551`}>Review 3</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c43572`}>Review 4</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c43712`}>Review 5</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c43611`}>Review 6</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c62314`}>Review 7</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/0f0c0aae-a792-4b4e-8b88-203ab84c612651`}>Review 8</a>
-          <a href={`${process.env.NEXT_PUBLIC_SPAIN_SITE}`}>Review 9</a>
-          <a href={`${process.env.NEXT_PUBLIC_BRAZIL_SITE}`}>Review 10</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/480dca8d-d8ea-4af2-9008-b26760ahsgh9`}>Review 11</a>
-          <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/480dca8d-d8ea-4af2-9008-b26760ahsgj4`}>Review 12</a>
+          <a href={`${process.env.NEXT_PUBLIC_SPAIN_SITE}`}>Review 4</a>
+          <a href={`${process.env.NEXT_PUBLIC_BRAZIL_SITE}`}>Review 5</a>
         </div>
       </div>
     </main>

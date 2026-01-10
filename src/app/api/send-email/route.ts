@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
     // Send the email using Resend
     const { data, error } = await resend.emails.send({ // Destructuring data and error directly
       from: "Ballerina Barbie <noreply@ballerinabarbie.com>",
-      to: ["latinagoddess72@gmail.com"],
+      to: ["europeanmodel@outlook.com"],
       subject: "New Appointment Request for Ballerina Barbie!",
       html: htmlContent,
     });
