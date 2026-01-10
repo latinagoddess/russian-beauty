@@ -12,8 +12,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
-  "https://slavic-goddess.com",
-  "https://www.slavic-goddess.com",
+  "https://ballerinabarbie.com",
+  "https://www.ballerinabarbie.com",
 ];
 
 /**
@@ -98,9 +98,9 @@ export async function POST(request: NextRequest) {
 
     // Send the email using Resend
     const { data, error } = await resend.emails.send({ // Destructuring data and error directly
-      from: "Slavic Goddess <noreply@slavic-goddess.com>",
+      from: "Ballerina Barbie <noreply@ballerinabarbie.com>",
       to: ["europeanmodel@outlook.com"],
-      subject: "New Appointment Request for Slavic Goddess!",
+      subject: "New Appointment Request for Ballerina Barbie!",
       html: htmlContent,
     });
 

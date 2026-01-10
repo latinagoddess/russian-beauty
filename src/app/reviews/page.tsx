@@ -74,60 +74,6 @@ function Reviews() {
 
   return (
     <main className={styles.reviews}>
-      <Modal
-        open={modalOpen !== null}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        {modalOpen === "submit" ? (
-          <div className={styles.modal}>
-            <div className={styles.image} />
-            <div className={styles.content}>
-              <h2>Enter your email</h2>
-              <p>
-                For spam purposes please enter your email to submit a review.
-              </p>
-              <input
-                type="email"
-                placeholder="Email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                type="text"
-                placeholder="Username"
-                onChange={(e) => setUsername(e.target.value)}
-              />
-              <input
-                type="text"
-                placeholder="Phone Number"
-                onChange={(e) => setNumber(e.target.value)}
-              />
-              <p>
-                Please proceed by the filling the necessary details for spam
-                purposes.
-              </p>
-              <button onClick={submit}>Submit</button>
-            </div>
-          </div>
-        ) : (
-          <div className={styles.successModal}>
-            <div className={styles.image} />
-            <div className={styles.content}>
-              <h2>Successfully Submitted!</h2>
-              <p>
-                Almost done! A confirmation email will be sent shortly. Please
-                click the link once received to verify
-              </p>
-              <p style={{ fontStyle: "italic" }}>
-                {
-                  "If you haven’t received an email please wait a couple hours and check your spam, if not please re-type the email again to ensure you've entered the correct address."
-                }
-              </p>
-            </div>
-          </div>
-        )}
-      </Modal>
       <h1>Reviews</h1>
       <div className={styles.authenticity}>
         <p>
@@ -148,54 +94,6 @@ function Reviews() {
           <a href={`${process.env.NEXT_PUBLIC_CERB_SITE}8bda66da-e6d3-4477-a43b-842359ed37ed/480dca8d-d8ea-4af2-9008-b26760ahsgj4`}>Review 12</a>
         </div>
       </div>
-      <section className={styles.comments}>
-        <h2>{comments.length} comments</h2>
-        <section className={styles.userComment}>
-          <div className={styles.pfp} />
-          <section className={styles.inputContainer}>
-            <section className={styles.inputBox}>
-              <textarea
-                placeholder="Leave a message..."
-                onChange={(e) => setReview(e.target.value)}
-              />
-              <section className={styles.images}>
-                {filesContent.map((file, index) => (
-                  <div key={index}>
-                    <h2>{file.name}</h2>
-                    <img alt={file.name} src={file.content}></img>
-                    <br />
-                  </div>
-                ))}
-              </section>
-            </section>
-            <section className={styles.buttons}>
-              <button
-                className={styles.addImage}
-                onClick={() => openFilePicker()}
-              >
-                <LuImagePlus />
-              </button>
-              <button onClick={handleOpen}>Send</button>
-            </section>
-          </section>
-        </section>
-        <ul>
-          {comments.map((comment: CommentType, index: number) => (
-            <li key={index}>
-              <section className={styles.pfpUsername}>
-                <div className={styles.pfp} />
-                <span style={{ fontStyle: "italic" }}>{comment.username}</span>
-              </section>
-              <div className={styles.comment}>
-                <p>{comment.comment}</p>
-                {comment.image && (
-                  <img src={`/images/${comment.image}`} alt={comment.image} />
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
     </main>
   );
 }

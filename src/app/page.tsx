@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.bg}>
-        <Link href="/about">
-          <button>{"Click if you're 18+"}</button>
+        <Link href="/rates">
+          <button>Click if you are 18+</button>
         </Link>
       </div>
     </main>

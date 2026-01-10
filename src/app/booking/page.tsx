@@ -8,9 +8,9 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
-import { FaArrowDown } from "react-icons/fa6";
+import { FaArrowDown, FaStar } from "react-icons/fa6";
 
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function Booking() {
   const router = useRouter();
@@ -31,7 +31,7 @@ function Booking() {
         {"you’re"} seeing me for. <span>No deposit = no booking.</span>
         <br />
         <br />
-        <p style={{fontStyle: "italic"}}>(If {"you’re"} not a new client and end up cancelling, then for the next session a deposit will be required like the first time)</p>
+        <p style={{ fontStyle: "italic" }}>(If {"you’re"} not a new client and end up cancelling, then for the next session a deposit will be required like the first time)</p>
         <br />
         <br />
         <em>
@@ -65,7 +65,7 @@ function Booking() {
         style={{ display: openedSection == "1" ? "flex" : "none" }}
       >
         <p>Why is a deposit required?</p>
-        <ul style={{alignItems: "center"}}>
+        <ul style={{ alignItems: "center" }}>
           <li>
             <span>Wasting time</span>: As this is pretty straightforward there
             are many people who waste time for people like us, I put a lot of
@@ -89,11 +89,11 @@ function Booking() {
             {"you’re wishing to see me for/make plans for myself."}
             <br />
             <br />
-            <span style={{textDecoration: "none", fontStyle: "italic"}}>The deposit counts towards the cancellation fee if you do cancel, which is why {"it's"} necessary for new clients, but if you do cancel due to issues then the deposit can be used towards the next session.</span>
+            <span style={{ textDecoration: "none", fontStyle: "italic" }}>The deposit counts towards the cancellation fee if you do cancel, which is why {"it's"} necessary for new clients, but if you do cancel due to issues then the deposit can be used towards the next session.</span>
           </li>
           <br />
           <br />
-          <p style={{color: "rgb(240, 161, 161)", fontWeight: "bold", textAlign: "center"}}><p style={{fontSize: "1.2rem"}}>{"Want to see why I’m Canada’s #1 provider?"} <span style={{textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap"}} onClick={() => router.push("/reviews")}>Click here to see my reviews</span></p><span style={{fontSize: "1rem", fontStyle: "italic"}}>{"Try not to fall in love ;)"}</span></p>
+          <p style={{ color: "rgb(240, 161, 161)", fontWeight: "bold", textAlign: "center" }}><p style={{ fontSize: "1.2rem" }}>{"Want to see why I’m Canada’s #1 provider?"} <span style={{ textDecoration: "underline", cursor: "pointer", whiteSpace: "nowrap" }} onClick={() => router.push("/reviews")}>Click here to see my reviews</span></p><span style={{ fontSize: "1rem", fontStyle: "italic" }}>{"Try not to fall in love ;)"}</span></p>
         </ul>
       </section>
       <section
@@ -103,23 +103,18 @@ function Booking() {
         <p>How to do a deposit:</p>
         <ul>
           <li>
-            <span>Purchasing my digital art</span> (which you will receive
-            through email in minutes), this not only supports my art career
-            but also entails the safest way for both of us! This is done in a
-            secure, fast, safe way for both parties with{" "}
-            <span style={{whiteSpace: "nowrap"}}>e-transfer</span> with these easy steps:
+            Purchasing my online books this not only supports my career but also entails the safest
+            way for both of us! This is done in a secure, fast, safe way for both parties with e-transfer
+            or prepaid visa {":)"}
             <br />
             <br />
-            1. Add my art to your cart/checkout {"(I’ll send you the website for my art to do this once we confirm a time/day)"}
+            Once we confirm the time / appointment {"you’re wanting I’ll"} forward you the information
+            for the etransfer info to securely checkout with my online ebooks which you receive
+            instantly!
             <br />
             <br />
-            2. Enter your billing information then click place order done! <span style={{color: "rgb(255, 98, 98)"}}>{"Fill out the information then click place order, done! Fast and easy :)"}</span>
-            <br />
-            <br /> <span>Booking is secured!</span> <br />
-            <br />{"I’ll"} get a notification instantly once you checkout and {"you’ll"} receive an email of my digital art along with my information and social media where you can follow my art instagram page which would be lovely if possible {"<3"}
-            <br />
-            <br />
-            I like to be as safe as possible as {"I’m"} new to the country. This method entails safety for both parties as you are paying for digital art which you receive instantly via email. Plus this way I {"don’t"} see your legal name and you {"don’t"} see mine as {"I’ve"} had issues with stalkers seeing my personal name from etransfer in the past. This is done on a reputable website that sells art for new and upcoming artists like me. For the remainder of the payment if {"it's"} safer and easier for you then you can buy more of my art as well. Clients who show up to the session with my artwork as their lockscreen get a sweet treat{";)"}
+            Clients who show up to the session who can let me know their favourite character do get
+            a little bonus surprise {":)"}
           </li>
           <li>
             <span>Amazon Gift Card</span>, if the art method {"isn’t"} for you
@@ -129,7 +124,16 @@ function Booking() {
             <a href="https://www.amazon.ca/Amazon-ca-eGift-Card-Amazon-Logo/dp/B07P68FH74/ref=sr_1_3?sr=8-3">
               Amazon.ca eGift Card
             </a><br /> <br />
-            <span style={{fontStyle: "italic", textDecoration: "none"}}>Bonus Limited Time Offer: Clients who pay in full for the session with buying my art also get to film the session or pick an extra for <span style={{textDecoration: "underlined"}}>FREE</span> and get my $300 MEGA video package for <span style={{textDecoration: "underlined"}}>FREE</span> (which comes with 6 videos) as {"I’m"} a few sales away to getting my art listed into exhibits!</span>
+            <a href="https://www.amazon.ca/Amazon-ca-eGift-Card-Amazon-Logo/dp/B07P68FH74/ref=sr_1_3?sr=8-3">
+              Amazon.ca eGift Card
+            </a><br /> <br />
+
+            <div className={styles.limitedOffer}>
+              <FaStar className={styles.starIcon} />
+              <p>
+                Bonus Limited Time Offer: Clients who pay in full for the session with buying ebooks get to film the session or pick 2 extras for <span>FREE</span> and get my $300 MEGA video package for <span>FREE</span> (which comes with 6 videos) as {"I’m"} getting closer to hitting my goal {":)"}
+              </p>
+            </div>
           </li>
         </ul>
       </section>

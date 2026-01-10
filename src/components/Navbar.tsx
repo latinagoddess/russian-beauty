@@ -43,7 +43,7 @@ function Navbar() {
     {
       title: "Rates & Online Content",
       href: "/rates",
-    },    
+    },
     {
       title: "Booking Procedure",
       href: "/booking",
@@ -97,7 +97,7 @@ function Navbar() {
       />
 
       <section className={styles.logoHolder} onClick={() => router.push("/")}>
-        <h3>Your Special Slavic Baby</h3>
+        <h3>Your Next Addiction</h3>
       </section>
 
       {/* Navbar links */}
@@ -130,9 +130,6 @@ function Navbar() {
             <MenuItem onClick={handleCloseAboutMenu}>
               <a href="/interests">Interests</a>
             </MenuItem>
-            <MenuItem onClick={handleCloseAboutMenu}>
-              <a href="/my-story">My Story</a>
-            </MenuItem>
           </Menu>
         </li>
         {links.map((link) => {
@@ -143,7 +140,7 @@ function Navbar() {
           );
         })}
         <li>
-          <Link href="https://x.com/moscowbaeee8278">
+          <Link href="https://x.com/balletbarbie00">
             <AiOutlineTwitter />
           </Link>
         </li>

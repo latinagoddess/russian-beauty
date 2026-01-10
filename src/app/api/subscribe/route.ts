@@ -4,11 +4,11 @@ import { Resend } from 'resend';
 export const dynamic = 'force-dynamic';
 
 const resendApiKey = process.env.RESEND_API_KEY;
-const configuredSenderEmail = "Slavic Goddess <noreply@slavic-goddess.com>";
+const configuredSenderEmail = "Ballerina Barbie <noreply@ballerinabarbie.com>";
 
 const allowedOrigins = [
-  "https://slavic-goddess.com",
-  "https://www.slavic-goddess.com",
+  "https://ballerinabarbie.com",
+  "https://www.ballerinabarbie.com",
 ].filter(Boolean) as string[];
 
 let resendInstance: Resend | null = resendApiKey ? new Resend(resendApiKey) : null;
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
           <p>You'll now be the first to know about my upcoming travel dates and special announcements. I'll send updates every couple of weeks.</p>
           <p>If you're ready to book an enchanting experience, my booking form is waiting for you. I can't wait to meet you! 💌</p>
           <p style="text-align: center; margin-top: 30px;">
-            <a href="https://slavic-goddess.com/booking-form/" style="background-color: #d17a93; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            <a href="https://ballerinabarbie.com/booking-form/" style="background-color: #d17a93; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">
               Book an Appointment
             </a>
           </p>

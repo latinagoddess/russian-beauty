@@ -23,7 +23,6 @@
     "react-icons": "^5.0.1",
     "react-player": "^2.16.0",
     "resend": "^3.2.0",
-    "sass": "^1.85.1",
     "use-file-picker": "^2.1.2"
   },
   "devDependencies": {
@@ -34,6 +33,7 @@
     "@zeit/next-css": "^1.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "sass": "^1.97.2",
     "typescript": "^5"
   }
 }

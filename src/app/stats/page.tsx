@@ -19,7 +19,7 @@ function Stats() {
           <li>Shoe size: 6.5 American / 37 European</li>
           <li>Brown hair</li>
           <li>No tattoos</li>
-          <li>Speaks Russian, English, little bit of Spanish</li>
+          <li>Speaks Russian, English, little bit of Greek</li>
           <li>STD Free (Get tested weekly)</li>
         </ul>
       </section>

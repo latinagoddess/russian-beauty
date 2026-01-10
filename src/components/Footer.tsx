@@ -14,10 +14,10 @@ function Footer() {
 
   return (
     <section className={styles.footer}>
-      <Link href="https://x.com/moscowbaeee8278">
+      <Link href="https://x.com/balletbarbie00">
         <FaTwitter />
       </Link>
-      <p>© 2024 Slavic Baby</p>
+      <p>© 2024 Ballerina Barbie</p>
     </section>
   );
 }

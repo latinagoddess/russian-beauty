@@ -126,9 +126,6 @@ function MobileMenu(props: MenuProps) {
               <MenuItem onClick={handleCloseAboutMenu}>
                 <a href="/interests">Interests</a>
               </MenuItem>
-              <MenuItem onClick={handleCloseAboutMenu}>
-                <a href="/my-story">My Story</a>
-              </MenuItem>
             </Menu>
           </li>
           {props.links.map((link, i) => {
@@ -139,7 +136,7 @@ function MobileMenu(props: MenuProps) {
             );
           })}
           <li>
-            <Link href="https://x.com/moscowbaeee8278">Twitter</Link>
+            <Link href="https://x.com/balletbarbie00">Twitter</Link>
           </li>
         </ul>
       </motion.section>

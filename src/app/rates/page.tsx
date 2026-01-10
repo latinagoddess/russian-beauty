@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/Rates.module.scss";
+import { FaStar } from "react-icons/fa";
 
 function Rates() {
   return (
@@ -49,14 +50,23 @@ function Rates() {
         <li>Dom $100</li>
         <li>PSE $50</li>
         <li>Massage $50</li>
-        <li><p style={{textDecoration: "underline", maxWidth: "40rem", lineHeight: "150%", textAlign: "center"}}>Clients who pay in full for the session with buying my art also get to film the session or pick an extra for <span style={{textDecoration: "underlined"}}>FREE</span> and get my $300 MEGA video package for <span style={{textDecoration: "underlined"}}>FREE</span> (which comes with 6 videos) as {"I’m"} a few sales away to getting my art listed into exhibits!<span style={{fontStyle: "italic"}}>{"(Limited Time Offer)"}</span></p></li>
+        <li>Massage $50</li>
       </ul>
+
+      <div className={styles.limitedOffer}>
+        <FaStar className={styles.starIcon} />
+        <p>
+          Clients who pay in full for the session with buying ebooks get to film the session or pick 2 extras for <span>FREE</span> and get my $300 MEGA video package for <span>FREE</span> (which comes with 6 videos) as {"I’m"} getting closer to hitting my goal {":)"}
+          <br />
+          <span style={{ fontSize: "0.9rem", fontStyle: "italic", color: "#666", fontWeight: "normal", textTransform: "none" }}> (Limited Time Offer)</span>
+        </p>
+      </div>
 
       <h1>Buy My Content</h1>
       <ul>
         <li>
-        Porno Tape Package {"(Comes with 3 pornos, face is showing in 1 of these) "}
-        $109.99 <span className={styles.sale}>SALE</span> (Instead
+          Porno Tape Package {"(Comes with 3 pornos, face is showing in 1 of these) "}
+          $109.99 <span className={styles.sale}>SALE</span> (Instead
           of $150)
         </li>
         <li><img src="/images/package.jpg" alt="Porno Tape Package" /></li>
@@ -71,7 +81,7 @@ function Rates() {
         <li><img src="/images/mega.png" alt="Mega X" /></li>
       </ul>
       <span>{"OR get ALL of my content (11 videos + 1 bonus video) for $359.99"}</span>
-      <span style={{fontSize: "0.9rem", fontStyle: "italic"}}>{"Get a special taste of me before you do in person ;)"}</span>
+      <span style={{ fontSize: "0.9rem", fontStyle: "italic" }}>{"Get a special taste of me before you do in person ;)"}</span>
 
       <h1>Online Services</h1>
       <ul>
